@@ -1,3 +1,16 @@
 .footer{
     background-color: #353535;
+    color: $blanc;
+    font-family: $policetexte;
+}
+
+.footer h4{
+    font-family: $policetitre;
+    padding: 20px 0px 18px 0px;
+    margin: 0px;
+}
+
+.footer a{
+    color: $blanc;
+    text-decoration: none;
 }
