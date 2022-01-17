@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .static-header {
   position: -webkit-sticky;
   position: sticky;
@@ -458,6 +460,10 @@
 
 .ficheresto__location {
   margin: 0px 0px 0px 15px;
+}
+
+.footer {
+  background-color: #353535;
 }
 
 * {
