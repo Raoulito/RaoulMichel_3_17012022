@@ -1,4 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .footer {
   background-color: #353535;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+.footer h4 {
+  font-family: "Shrikhand";
+  padding: 20px 0px 18px 0px;
+  margin: 0px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=footer.css.map */
