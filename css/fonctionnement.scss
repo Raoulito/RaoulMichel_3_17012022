@@ -1,0 +1,58 @@
+.fonctionnement{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: $policetexte;
+    }
+    
+.fonctionnement h1 {
+    font-size: 1.5em;
+    padding: 30px 0px 10px 20px;
+}
+    
+
+.tile{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: $grisclair;
+    border-radius: 20px;
+    margin: 10px 20px 10px 25px;
+    box-shadow: $shadow;
+    &__circle{
+        position: relative;
+        margin-left:-10px;
+        height: 27px;
+        width: 27px;
+        background: $primaire;
+        border-radius: 20px;
+    }
+    .fas{
+        width:20px;
+        height:20px;
+        color: $gristresfonce;
+        margin-left: 20px;
+        font-size: 120%;
+    }
+    &__num{
+        margin:4px 0 0 9px;
+        color: white;
+        @include textegras;
+    }
+    &__text{
+        @include textenoir;
+        @include textegras;
+        padding: 27px;
+        margin: 0;
+    }
+    &:hover{
+        background: #f5edff;
+        transition: .5s linear;
+        box-shadow: $shadowbig;
+        .fas{
+            color: $primaire;
+            transition: .5s linear;
+        }
+    }
+}
