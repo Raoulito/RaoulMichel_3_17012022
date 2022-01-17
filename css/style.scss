@@ -1,0 +1,21 @@
+@import "./header.scss";
+@import "./var.scss";
+@import "./mixins.scss";
+@import "./bouton.scss";
+@import "./loader.scss";
+@import "./fonctionnement.scss";
+@import "./restaurants.scss";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.static-header {
+    @include flexcentre;
+}
+.location a {
+    @include flexcentre;
+    @include textenoir;
+    @include textegras;
+}

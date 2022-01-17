@@ -1,0 +1,27 @@
+// Couleurs et effets
+
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$blanc: #ffffff;
+$gristresfonce: #7e7e7e;
+$grisfonce: #eaeaea;
+$grisclair: #f6f6f6;
+$shadow: 0 2px 4px #cecece;
+$shadowbig: 0 3px 4px #cecece;
+$degrade: linear-gradient($secondaire, $primaire);
+$degradeleger:  linear-gradient($secondaire, lighten($secondaire, 5));
+
+
+
+// Polices
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+$policetitre: 'Shrikhand';
+$policetexte: 'Roboto';
+
+// Mise en page
+
+
