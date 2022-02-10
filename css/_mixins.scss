@@ -12,3 +12,25 @@
 @mixin textegras {
     font-weight: bolder;
 }
+
+@mixin newcard {
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    background: $tertiaire;
+    border-radius: 2px;
+    &text{
+        display: block;
+        font-size: 0.9rem;
+        text-align: center;
+        color: darken($tertiaire, 40%);
+        padding: 8px;
+    }
+}
+
+@mixin heart ($bottom: 25px){
+    font-size: 1.5rem;
+    position:absolute;
+    right: 25px;
+    bottom: $bottom;
+}

@@ -4,8 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .static-header {
   position: -webkit-sticky;
   position: sticky;
@@ -431,6 +429,28 @@
 }
 
 .restaurants {
+  font-family: "Roboto";
+  background-color: #f6f6f6;
+}
+
+.restaurants h3 {
+  padding: 50px 0 10px 20px;
+  font-size: 1.5em;
+}
+
+.restaurants h4 {
+  margin: 15px 0px 10px 15px;
+}
+
+.fond-gris {
+  background: #f6f6f6;
+}
+
+.fond-gris__withbr {
+  border-radius: 20px;
+}
+
+.bloc-restaurant {
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,16 +461,9 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: "Roboto";
-  background-color: #f6f6f6;
 }
 
-.restaurants h1 {
-  font-size: 1.5em;
-  padding: 30px 0px 10px 20px;
-}
-
-.ficheresto {
+.rest-prev {
   position: relative;
   background: white;
   height: 250px;
@@ -460,26 +473,92 @@
           box-shadow: 0 2px 4px #cecece;
 }
 
-.ficheresto__location {
+.rest-prev__link {
+  text-decoration: none;
+  color: black;
+}
+
+.rest-prev__card {
+  overflow: hidden;
+  height: 70%;
+}
+
+.rest-prev--cardpicture {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rest-prev__new {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #99E2D0;
+  border-radius: 2px;
+}
+
+.rest-prev__newtext {
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #278870;
+  padding: 8px;
+}
+
+.rest-prev__location {
   margin: 0px 0px 0px 15px;
+}
+
+.hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hoverheart:hover .far.fa-heart {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  opacity: 1;
 }
 
 .footer {
   background-color: #353535;
   color: #ffffff;
   font-family: "Roboto";
-  height: 200px;
 }
 
 .footer h4 {
   font-family: "Shrikhand";
-  padding: 20px 0px 18px 0px;
+  padding: 20px 0px 0px 20px;
   margin: 0px;
 }
 
 .footer a {
   color: #ffffff;
   text-decoration: none;
+  padding: 20px 0px 18px 20px;
 }
 
 * {
