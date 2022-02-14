@@ -16,6 +16,19 @@
           box-shadow: 0 2px 4px #cecece;
 }
 
+.arrow {
+  position: absolute;
+  left: 15px;
+  top: 30%;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.arrow:hover {
+  color: #7e7e7e;
+}
+
 .under-header {
   font-family: "Roboto";
   background-color: #eaeaea;
