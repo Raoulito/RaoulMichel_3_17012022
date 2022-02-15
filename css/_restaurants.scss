@@ -27,29 +27,21 @@
 }
 
 .page-restaurant{
-    margin: 50px;
+    margin: 0;
     &__title{
         font-family: $policetitre;
         font-size: 1.75rem;
-        margin:10px;
-        padding-top: 20px;
-    }
-    .hoverheart:hover{
-        .fas.fa-heart {
-            opacity: 1;
-            transition: .3s ease-in-out;
-        }
-        .far.fa-heart{
-            opacity: 0;
-            transition: .3s ease-in-out;
-        }
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        font-weight: 100;
     }
     .fas.fa-heart{
         font-size: 1.5rem;
         position:absolute;
         right: 25px;
-        top: 30px;
-        background: $grisfonce;
+        top: 365px;
+        background: $degrade;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
@@ -58,9 +50,13 @@
         font-size: 1.5rem;
         position:absolute;
         right: 25px;
-        top: 30px;
+        top: 365px;
         opacity: 1;
     }
+}
+
+.page-restaurant h1{
+    margin:0;
 }
 
 .rest-prev {
