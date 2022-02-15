@@ -69,6 +69,20 @@
   padding-bottom: 20px;
 }
 
+.underheader-menu {
+  overflow: hidden;
+  height: 280px;
+}
+
+.underheader-menu__picture {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+
 .bouton a {
   position: relative;
   display: block;
@@ -476,6 +490,48 @@
       justify-content: space-around;
 }
 
+.page-restaurant {
+  margin: 50px;
+}
+
+.page-restaurant__title {
+  font-family: "Shrikhand";
+  font-size: 1.75rem;
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.page-restaurant .hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.page-restaurant .hoverheart:hover .far.fa-heart {
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.page-restaurant .fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  background: #eaeaea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.page-restaurant .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  opacity: 1;
+}
+
 .rest-prev {
   position: relative;
   background: white;
@@ -518,6 +574,10 @@
   text-align: center;
   color: #278870;
   padding: 8px;
+}
+
+.rest-prev__new:hover {
+  background-color: #ffffff;
 }
 
 .rest-prev__location {

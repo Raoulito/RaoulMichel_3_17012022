@@ -26,6 +26,43 @@
     justify-content: space-around;
 }
 
+.page-restaurant{
+    margin: 50px;
+    &__title{
+        font-family: $policetitre;
+        font-size: 1.75rem;
+        margin:10px;
+        padding-top: 20px;
+    }
+    .hoverheart:hover{
+        .fas.fa-heart {
+            opacity: 1;
+            transition: .3s ease-in-out;
+        }
+        .far.fa-heart{
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+    }
+    .fas.fa-heart{
+        font-size: 1.5rem;
+        position:absolute;
+        right: 25px;
+        top: 30px;
+        background: $grisfonce;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+    }
+    .far.fa-heart{
+        font-size: 1.5rem;
+        position:absolute;
+        right: 25px;
+        top: 30px;
+        opacity: 1;
+    }
+}
+
 .rest-prev {
     position: relative;
     background: white;
@@ -50,6 +87,10 @@
     &__new {
         @include newcard;
         
+    &:hover{
+        background-color:$blanc;
+    }
+    
     }
     &__location {
         margin: 0px 0px 0px 15px;
@@ -66,6 +107,7 @@
         transition: 0.3s ease-in-out;
     }
 }
+
 .fas.fa-heart {
     @include heart;
     background: $degrade;
@@ -73,6 +115,7 @@
     -webkit-text-fill-color: transparent;
     opacity: 0;
 }
+
 .far.fa-heart {
     @include heart;
     opacity: 1;
