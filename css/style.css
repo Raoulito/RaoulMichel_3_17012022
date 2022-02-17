@@ -766,8 +766,8 @@
 }
 
 .page-menu > :nth-of-type(4) {
-  -webkit-animation: SlideDown 2s ease-in-out;
-          animation: SlideDown 2s ease-in-out;
+  -webkit-animation: SlideDown 2.5s ease-in-out;
+          animation: SlideDown 2.5s ease-in-out;
 }
 
 @-webkit-keyframes SlideDown {
