@@ -27,12 +27,11 @@
 }
 
 .page-restaurant{
-    margin: 0;
+    margin: 0px 20px;
     &__title{
         font-family: $policetitre;
         font-size: 1.75rem;
         padding-top: 15px;
-        padding-left: 15px;
         padding-bottom: 10px;
         font-weight: 100;
     }
@@ -82,11 +81,6 @@
     }
     &__new {
         @include newcard;
-        
-    &:hover{
-        background-color:$blanc;
-    }
-    
     }
     &__location {
         margin: 0px 0px 0px 15px;
