@@ -143,4 +143,56 @@
         -webkit-box-shadow: 0 2px 4px #cecece;
         box-shadow: 0 2px 4px #cecece;
     }
+    .page-restaurant__title {
+        font-family: "Shrikhand";
+        font-size: 2rem;
+        padding-bottom: 15px;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    .page-menu__text {
+        background-color: #f6f6f6;
+        font-size: 1.5em;
+        font-weight: 100;
+        font-family: "Roboto";
+        margin: 20px 0px 8px 100px;
+    }
+    
+    .page-menu__line {
+        background-color: #99E2D0;
+        margin: 0;
+        height: 3px;
+        width: 65px;
+        margin: 0px 0px 0px 100px;
+    }
+    
+    .page-menu {
+        margin: 0px 15px 15px 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 25px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        font-family: "Roboto";
+        flex-wrap: nowrap;
+    }
+    
+    .page-menu__bloc {
+        margin-bottom: 15px;
+        margin-left: 25px;
+        background: white;
+        height: 87px;
+        width: 100%;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 2px 4px #cecece;
+        box-shadow: 0 2px 4px #cecece;
+        position: relative;
+        overflow: hidden;
+    }
+
     }
