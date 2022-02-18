@@ -60,23 +60,28 @@
 @media screen and (min-width: 1024px){
 
     .fonctionnement {
-        font-size: 1.3em;
-        padding-bottom: 50px;
+        font-size: 1.2em;
+        padding-top: 30px;
+        padding-bottom: 0px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: row;
         -ms-flex-pack: distribute;
         justify-content: space-around;
         font-family: "Roboto";
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .tile{
-        width:450px;
+        width:350px;
     }    
 }
