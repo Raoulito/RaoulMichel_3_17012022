@@ -105,3 +105,14 @@
     @include heart;
     opacity: 1;
 }
+
+@media screen and (min-width: 1024px){
+    .tile__circle {
+        position: relative;
+        margin-left: -10px;
+        height: 30px;
+        width: 30px;
+        background: #9356DC;
+        border-radius: 20px;
+    }
+    }
