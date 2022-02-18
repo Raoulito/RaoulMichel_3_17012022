@@ -390,7 +390,7 @@
   font-family: "Roboto";
 }
 
-.fonctionnement h1 {
+.fonctionnement h2 {
   font-size: 1.5em;
   padding: 30px 0px 10px 20px;
 }
@@ -497,8 +497,7 @@
 .page-restaurant__title {
   font-family: "Shrikhand";
   font-size: 1.75rem;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-weight: 100;
 }
 
@@ -506,7 +505,7 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  top: 365px;
+  top: 370px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -518,7 +517,7 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  top: 365px;
+  top: 370px;
   opacity: 1;
 }
 
@@ -751,23 +750,23 @@
 }
 
 .page-menu > :nth-of-type(1) {
+  -webkit-animation: SlideDown 0.5s ease-in-out;
+          animation: SlideDown 0.5s ease-in-out;
+}
+
+.page-menu > :nth-of-type(2) {
   -webkit-animation: SlideDown 1s ease-in-out;
           animation: SlideDown 1s ease-in-out;
 }
 
-.page-menu > :nth-of-type(2) {
+.page-menu > :nth-of-type(3) {
   -webkit-animation: SlideDown 1.5s ease-in-out;
           animation: SlideDown 1.5s ease-in-out;
 }
 
-.page-menu > :nth-of-type(3) {
+.page-menu > :nth-of-type(4) {
   -webkit-animation: SlideDown 2s ease-in-out;
           animation: SlideDown 2s ease-in-out;
-}
-
-.page-menu > :nth-of-type(4) {
-  -webkit-animation: SlideDown 2.5s ease-in-out;
-          animation: SlideDown 2.5s ease-in-out;
 }
 
 @-webkit-keyframes SlideDown {
