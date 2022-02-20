@@ -702,7 +702,7 @@
 
 .page-menu__text {
   background-color: #f6f6f6;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 100;
   font-family: "Roboto";
   margin: 20px 0px 8px 10px;
@@ -890,20 +890,6 @@
     font-weight: 100;
     text-align: center;
   }
-  .page-menu__text {
-    background-color: #f6f6f6;
-    font-size: 1.5em;
-    font-weight: 100;
-    font-family: "Roboto";
-    margin: 20px 0px 8px 100px;
-  }
-  .page-menu__line {
-    background-color: #99E2D0;
-    margin: 0;
-    height: 3px;
-    width: 65px;
-    margin: 0px 0px 0px 100px;
-  }
   .page-menu {
     margin: 0px 15px 15px 30px;
     display: -webkit-box;
@@ -918,6 +904,20 @@
     font-family: "Roboto";
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .page-menu__text {
+    background-color: #f6f6f6;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Roboto";
+    margin: 20px 0px 8px 100px;
+  }
+  .page-menu__line {
+    background-color: #99E2D0;
+    margin: 0;
+    height: 3px;
+    width: 65px;
+    margin: 0px 0px 0px 100px;
   }
   .page-menu__bloc {
     margin-bottom: 15px;
