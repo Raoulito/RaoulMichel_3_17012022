@@ -4,14 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@media screen and (min-width: 1024px) {
-  .restaurants h3 {
-    padding: 50px 0 10px 20px;
-    font-size: 2.2em;
-    text-align: center;
-  }
-}
-
 .static-header {
   position: -webkit-sticky;
   position: sticky;
@@ -89,14 +81,6 @@
      object-fit: cover;
   -o-object-position: center bottom;
      object-position: center bottom;
-}
-
-@media screen and (min-width: 1024px) {
-  .restaurants h3 {
-    padding: 50px 0 10px 20px;
-    font-size: 2.2em;
-    text-align: center;
-  }
 }
 
 .bouton a {
@@ -655,9 +639,6 @@
     background: #9356DC;
     border-radius: 20px;
   }
-}
-
-@media screen and (min-width: 1024px) {
   .restaurants h3 {
     padding: 50px 0 10px 20px;
     font-size: 2.2em;
