@@ -32,15 +32,15 @@
         overflow: hidden;
         &:hover .page-menu__recetteetprix{
             width: calc(100% - 65px);
-            transition: width .5s ease-in-out;
+            transition: width .3s ease-in-out;
         }
         &:hover .page-menu__check{
             transform: translateX(0px);
-            transition: .5s ease-in-out;
+            transition: .3s ease-in-out;
             }
         &:hover .fas.fa-check-circle{
             transform: rotate(360deg);
-            transition: rotate .5s ease-in-out ;
+            transition: rotate .3s ease-in-out ;
             }
     }
     &__plat{
@@ -52,12 +52,12 @@
         overflow: hidden;
         width: 100%;
         transform-origin: left 50%;
-        transition-duration: .5s;
+        transition-duration: .3s;
     }
     &__accompagnement{
         font-size: 0.85em;
-        padding-left: 15px;
-        margin: 5px;
+        padding-left: 10px;
+        margin: 1px 10px 0px 7px;
         white-space:nowrap;
         overflow:hidden;
         text-overflow: ellipsis;        
@@ -79,7 +79,7 @@
         border-radius: 0px 20px 20px 0px;
         transform: translateX(65px);
         overflow: hidden;
-        transition-duration: .5s;
+        transition-duration: .3s;
     }
     .fas.fa-check-circle{
         position:absolute;
@@ -190,5 +190,14 @@
         position: relative;
         overflow: hidden;
     }
+    &__prix {
+        margin: 0px 15px;
+        font-size: 1.7em;
+        font-weight: bold;
+        width: 50px;
+    }
+    &__plat{
+        margin:20px 0px 5px 15px;
+        }
 }
 }

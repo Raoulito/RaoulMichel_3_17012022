@@ -716,22 +716,22 @@
 
 .page-menu__bloc:hover .page-menu__recetteetprix {
   width: calc(100% - 65px);
-  -webkit-transition: width .5s ease-in-out;
-  transition: width .5s ease-in-out;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
 }
 
 .page-menu__bloc:hover .page-menu__check {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .page-menu__bloc:hover .fas.fa-check-circle {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: rotate .5s ease-in-out;
-  transition: rotate .5s ease-in-out;
+  -webkit-transition: rotate .3s ease-in-out;
+  transition: rotate .3s ease-in-out;
 }
 
 .page-menu__plat {
@@ -749,14 +749,14 @@
   width: 100%;
   -webkit-transform-origin: left 50%;
           transform-origin: left 50%;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .page-menu__accompagnement {
   font-size: 0.85em;
-  padding-left: 15px;
-  margin: 5px;
+  padding-left: 10px;
+  margin: 1px 10px 0px 7px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -782,8 +782,8 @@
   -webkit-transform: translateX(65px);
           transform: translateX(65px);
   overflow: hidden;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .page-menu .fas.fa-check-circle {
@@ -916,6 +916,15 @@
     box-shadow: 0 2px 4px #cecece;
     position: relative;
     overflow: hidden;
+  }
+  .page-menu__prix {
+    margin: 0px 15px;
+    font-size: 1.7em;
+    font-weight: bold;
+    width: 50px;
+  }
+  .page-menu__plat {
+    margin: 20px 0px 5px 15px;
   }
 }
 
