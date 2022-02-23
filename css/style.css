@@ -926,6 +926,14 @@
   .page-menu__plat {
     margin: 20px 0px 5px 15px;
   }
+  .page-menu .fas.fa-check-circle {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 1;
+  }
 }
 
 * {
