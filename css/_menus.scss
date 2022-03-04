@@ -30,9 +30,8 @@
         box-shadow: $shadow;
         position: relative;
         overflow: hidden;
-
         &:hover .page-menu__plat {
-            width: calc(100% - 80px);
+            animation: SmallerWidth 0.4s ease-in-out forwards;
             }
         &:hover .page-menu__recetteetprix {
             width: calc(100% - 65px);
@@ -162,6 +161,15 @@
     to {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes SmallerWidth {
+    from {
+        width: calc(100% - 0px);
+    }
+    to {
+        width: calc(100% - 80px)
     }
 }
 

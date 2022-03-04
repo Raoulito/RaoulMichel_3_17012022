@@ -779,7 +779,8 @@
 }
 
 .page-menu__bloc:hover .page-menu__plat {
-  width: calc(100% - 80px);
+  -webkit-animation: SmallerWidth 0.4s ease-in-out forwards;
+          animation: SmallerWidth 0.4s ease-in-out forwards;
 }
 
 .page-menu__bloc:hover .page-menu__recetteetprix {
@@ -1012,6 +1013,24 @@
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes SmallerWidth {
+  from {
+    width: calc(100% - 0px);
+  }
+  to {
+    width: calc(100% - 80px);
+  }
+}
+
+@keyframes SmallerWidth {
+  from {
+    width: calc(100% - 0px);
+  }
+  to {
+    width: calc(100% - 80px);
   }
 }
 
