@@ -32,7 +32,7 @@
         overflow: hidden;
         &:hover .page-menu__plat {
             animation: smallerWidth 0.4s ease-in-out forwards;
-            }
+        }
         &:hover .page-menu__recetteetprix {
             width: calc(100% - 65px);
             transition: width 0.4s ease-in-out;
