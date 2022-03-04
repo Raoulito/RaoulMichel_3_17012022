@@ -588,6 +588,7 @@
   position: absolute;
   right: 25px;
   top: 35px;
+  height: 24px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -600,6 +601,7 @@
   position: absolute;
   right: 25px;
   top: 35px;
+  height: 24px;
   opacity: 1;
 }
 
@@ -776,26 +778,33 @@
   overflow: hidden;
 }
 
+.page-menu__bloc:hover .page-menu__plat {
+  width: calc(100% - 80px);
+}
+
 .page-menu__bloc:hover .page-menu__recetteetprix {
   width: calc(100% - 65px);
-  -webkit-transition: width .4s ease-in-out;
-  transition: width .4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 .page-menu__bloc:hover .page-menu__check {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .page-menu__bloc:hover .fas.fa-check-circle {
-  -webkit-animation: Rotate .4s;
-          animation: Rotate .4s;
+  -webkit-animation: Rotate 0.4s;
+          animation: Rotate 0.4s;
 }
 
 .page-menu__plat {
   margin: 15px 0px 5px 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .page-menu__recetteetprix {
@@ -809,8 +818,8 @@
   width: 100%;
   -webkit-transform-origin: left 50%;
           transform-origin: left 50%;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .page-menu__accompagnement {
@@ -825,8 +834,7 @@
 .page-menu__prix {
   margin: 0;
   font-weight: bold;
-  padding-left: 10px;
-  width: 50px;
+  width: 40px;
 }
 
 .page-menu__check {
@@ -842,8 +850,8 @@
   -webkit-transform: translateX(65px);
           transform: translateX(65px);
   overflow: hidden;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .page-menu .fas.fa-check-circle {
@@ -1065,7 +1073,7 @@
     margin: 20px 0px 8px 100px;
   }
   .page-menu__line {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     margin: 0;
     height: 3px;
     width: 65px;

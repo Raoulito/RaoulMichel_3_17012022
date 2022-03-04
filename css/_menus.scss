@@ -1,251 +1,257 @@
 .page-menu {
-	margin-left: 15px;
-	margin-right: 15px;
-	display: flex;
-	flex-direction: column;
-	font-family: $policetexte;
-	&__title {
-		margin-bottom: 15px;
-	}
-	&__text {
-		background-color: $grisclair;
-		font-size: 1.2em;
-		font-weight: 100;
-		font-family: $policetexte;
-		margin: 20px 0px 8px 10px;
-	}
-	&__line {
-		background-color: $tertiaire;
-		margin: 0;
-		height: 3px;
-		width: 40px;
-		margin: 0px 0px 0px 10px;
-	}
-	&__bloc {
-		margin-bottom: 15px;
-		background: white;
-		height: 70px;
-		width: 100%;
-		border-radius: 20px;
-		box-shadow: $shadow;
-		position: relative;
-		overflow: hidden;
-		&:hover .page-menu__recetteetprix {
-			width: calc(100% - 65px);
-			transition: width .4s ease-in-out;
-		}
-		&:hover .page-menu__check {
-			transform: translateX(0px);
-			transition: .4s ease-in-out;
-		}
-		&:hover .fas.fa-check-circle {
-			animation: Rotate .4s;
-		}
-	}
-	&__plat {
-		margin: 15px 0px 5px 15px;
-	}
-	&__recetteetprix {
-		display: flex;
-		justify-content: space-between;
-		overflow: hidden;
-		width: 100%;
-		transform-origin: left 50%;
-		transition-duration: .4s;
-	}
-	&__accompagnement {
-		font-size: 0.85em;
-		padding-left: 10px;
-		margin: 1px 10px 0px 7px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	&__prix {
-		margin: 0;
-		font-weight: bold;
-		padding-left: 10px;
-		width: 50px;
-	}
-	&__check {
-		position: absolute;
-		background-color: $tertiaire;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		width: 65px;
-		transform-origin: right 50%;
-		border-radius: 0px 20px 20px 0px;
-		transform: translateX(65px);
-		overflow: hidden;
-		transition-duration: .4s;
-	}
-	.fas.fa-check-circle {
-		position: absolute;
-		left: 20px;
-		top: 25px;
-		font-size: 1.5rem;
-		color: white;
-		opacity: 1;
-	}
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: $policetexte;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__text {
+        background-color: $grisclair;
+        font-size: 1.2em;
+        font-weight: 100;
+        font-family: $policetexte;
+        margin: 20px 0px 8px 10px;
+    }
+    &__line {
+        background-color: $tertiaire;
+        margin: 0;
+        height: 3px;
+        width: 40px;
+        margin: 0px 0px 0px 10px;
+    }
+    &__bloc {
+        margin-bottom: 15px;
+        background: white;
+        height: 70px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: $shadow;
+        position: relative;
+        overflow: hidden;
+
+        &:hover .page-menu__plat {
+            width: calc(100% - 80px);
+            }
+        &:hover .page-menu__recetteetprix {
+            width: calc(100% - 65px);
+            transition: width 0.4s ease-in-out;
+        }
+        &:hover .page-menu__check {
+            transform: translateX(0px);
+            transition: 0.4s ease-in-out;
+        }
+        &:hover .fas.fa-check-circle {
+            animation: Rotate 0.4s;
+        }
+    }
+    &__plat {
+        margin: 15px 0px 5px 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__recetteetprix {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 100%;
+        transform-origin: left 50%;
+        transition-duration: 0.4s;
+    }
+    &__accompagnement {
+        font-size: 0.85em;
+        padding-left: 10px;
+        margin: 1px 10px 0px 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__prix {
+        margin: 0;
+        font-weight: bold;
+        width: 40px;
+    }
+    &__check {
+        position: absolute;
+        background-color: $tertiaire;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 65px;
+        transform-origin: right 50%;
+        border-radius: 0px 20px 20px 0px;
+        transform: translateX(65px);
+        overflow: hidden;
+        transition-duration: 0.4s;
+    }
+    .fas.fa-check-circle {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        font-size: 1.5rem;
+        color: white;
+        opacity: 1;
+    }
 }
 
 @keyframes Rotate {
-	0% {
-		transform: rotate(360deg);
-	}
-	10% {
-		transform: rotate(324deg);
-	}
-	20% {
-		transform: rotat(288deg);
-	}
-	25% {
-		transform: rotate(270deg);
-	}
-	30% {
-		transform: rotate(252deg);
-	}
-	40% {
-		transform: rotate(216deg);
-	}
-	50% {
-		transform: rotate(180deg);
-	}
-	60% {
-		transform: rotate(144deg);
-	}
-	70% {
-		trasnsform: rotate(108deg);
-	}
-	75% {
-		transform: rotate(90deg);
-	}
-	80% {
-		transform: rotate(72deg);
-	}
-	90% {
-		transform: rotate(36deg);
-	}
-	100% {
-		trasform: rotate(0deg);
-	}
+    0% {
+        transform: rotate(360deg);
+    }
+    10% {
+        transform: rotate(324deg);
+    }
+    20% {
+        transform: rotat(288deg);
+    }
+    25% {
+        transform: rotate(270deg);
+    }
+    30% {
+        transform: rotate(252deg);
+    }
+    40% {
+        transform: rotate(216deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(144deg);
+    }
+    70% {
+        trasnsform: rotate(108deg);
+    }
+    75% {
+        transform: rotate(90deg);
+    }
+    80% {
+        transform: rotate(72deg);
+    }
+    90% {
+        transform: rotate(36deg);
+    }
+    100% {
+        trasform: rotate(0deg);
+    }
 }
 
-.page-menu> :nth-of-type(1) {
-	animation: SlideDown 0.5s ease-in-out;
+.page-menu > :nth-of-type(1) {
+    animation: SlideDown 0.5s ease-in-out;
 }
 
-.page-menu> :nth-of-type(2) {
-	animation: SlideDown 1s ease-in-out;
+.page-menu > :nth-of-type(2) {
+    animation: SlideDown 1s ease-in-out;
 }
 
-.page-menu> :nth-of-type(3) {
-	animation: SlideDown 1.5s ease-in-out;
+.page-menu > :nth-of-type(3) {
+    animation: SlideDown 1.5s ease-in-out;
 }
 
-.page-menu> :nth-of-type(4) {
-	animation: SlideDown 2s ease-in-out;
+.page-menu > :nth-of-type(4) {
+    animation: SlideDown 2s ease-in-out;
 }
 
 @keyframes SlideDown {
-	from {
-		transform: translateY(60px);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0px);
-		opacity: 1;
-	}
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-	.bloc-restaurant {
-		padding-bottom: 50px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: row;
-		-ms-flex-pack: distribute;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-		align-content: space-between;
-	}
-	.rest-prev {
-		position: relative;
-		background: white;
-		height: 350px;
-		width: 40%;
-		border-radius: 20px;
-		margin: 20px;
-		-webkit-box-shadow: 0 2px 4px #cecece;
-		box-shadow: 0 2px 4px #cecece;
-	}
-	.page-restaurant__title {
-		font-family: "Shrikhand";
-		font-size: 2rem;
-		padding-bottom: 15px;
-		font-weight: 100;
-		text-align: center;
-	}
-	.page-menu {
-		margin: 0px 15px 15px 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		padding-left: 20px;
-		padding-right: 25px;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: row;
-		font-family: "Roboto";
-		flex-wrap: nowrap;
-		&__text {
-			background-color: #f6f6f6;
-			font-size: 1.5em;
-			font-weight: 100;
-			font-family: "Roboto";
-			margin: 20px 0px 8px 100px;
-		}
-		&__line {
-			background-color: #99E2D0;
-			margin: 0;
-			height: 3px;
-			width: 65px;
-			margin: 0px 0px 0px 100px;
-		}
-		&__bloc {
-			margin-bottom: 15px;
-			margin-left: 25px;
-			background: white;
-			height: 87px;
-			width: 100%;
-			border-radius: 20px;
-			-webkit-box-shadow: 0 2px 4px #cecece;
-			box-shadow: 0 2px 4px #cecece;
-			position: relative;
-			overflow: hidden;
-		}
-		&__prix {
-			margin: 0px 15px;
-			font-size: 1.7em;
-			font-weight: bold;
-			width: 50px;
-		}
-		&__plat {
-			margin: 20px 0px 5px 15px;
-		}
-	}
-	.page-menu .fas.fa-check-circle {
-		position: absolute;
-		left: 20px;
-		top: 32px;
-		font-size: 1.5rem;
-		color: white;
-		opacity: 1;
-	}
+    .bloc-restaurant {
+        padding-bottom: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .rest-prev {
+        position: relative;
+        background: white;
+        height: 350px;
+        width: 40%;
+        border-radius: 20px;
+        margin: 20px;
+        -webkit-box-shadow: 0 2px 4px #cecece;
+        box-shadow: 0 2px 4px #cecece;
+    }
+    .page-restaurant__title {
+        font-family: "Shrikhand";
+        font-size: 2rem;
+        padding-bottom: 15px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .page-menu {
+        margin: 0px 15px 15px 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 25px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: row;
+        font-family: "Roboto";
+        flex-wrap: nowrap;
+        &__text {
+            background-color: #f6f6f6;
+            font-size: 1.5em;
+            font-weight: 100;
+            font-family: "Roboto";
+            margin: 20px 0px 8px 100px;
+        }
+        &__line {
+            background-color: #99e2d0;
+            margin: 0;
+            height: 3px;
+            width: 65px;
+            margin: 0px 0px 0px 100px;
+        }
+        &__bloc {
+            margin-bottom: 15px;
+            margin-left: 25px;
+            background: white;
+            height: 87px;
+            width: 100%;
+            border-radius: 20px;
+            -webkit-box-shadow: 0 2px 4px #cecece;
+            box-shadow: 0 2px 4px #cecece;
+            position: relative;
+            overflow: hidden;
+        }
+        &__prix {
+            margin: 0px 15px;
+            font-size: 1.7em;
+            font-weight: bold;
+            width: 50px;
+        }
+        &__plat {
+            margin: 20px 0px 5px 15px;
+        }
+    }
+    .page-menu .fas.fa-check-circle {
+        position: absolute;
+        left: 20px;
+        top: 32px;
+        font-size: 1.5rem;
+        color: white;
+        opacity: 1;
+    }
 }
