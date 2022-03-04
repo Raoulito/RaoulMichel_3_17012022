@@ -1,8 +1,8 @@
 @mixin flexcentre {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
 
 @mixin textenoir {
     text-decoration: none;

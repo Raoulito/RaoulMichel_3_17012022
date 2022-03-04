@@ -53,6 +53,30 @@
     }
 }
 
+.hoverheart:hover {
+    .fas.fa-heart {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+    .far.fa-heart {
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.fas.fa-heart {
+    @include heart;
+    background: $degrade;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+.far.fa-heart {
+    @include heart;
+    opacity: 1;
+}
+
 .rest-prev {
     position: relative;
     background: white;
@@ -82,30 +106,6 @@
     }
 }
 
-.hoverheart:hover {
-    .fas.fa-heart {
-        opacity: 1;
-        transition: 0.3s ease-in-out;
-    }
-    .far.fa-heart {
-        opacity: 0;
-        transition: 0.3s ease-in-out;
-    }
-}
-
-.fas.fa-heart {
-    @include heart;
-    background: $degrade;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-}
-
-.far.fa-heart {
-    @include heart;
-    opacity: 1;
-}
-
 @media screen and (min-width: 1024px){
     .tile__circle {
         position: relative;
@@ -120,4 +120,4 @@
         font-size: 2.2em;
         text-align: center;
     }
-    }
+}

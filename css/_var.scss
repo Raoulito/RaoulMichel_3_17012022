@@ -1,5 +1,4 @@
 // Couleurs et effets
-
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
@@ -12,10 +11,7 @@ $shadowbig: 0 3px 4px #cecece;
 $degrade: linear-gradient($secondaire, $primaire);
 $degradeleger:  linear-gradient($secondaire, lighten($secondaire, 5));
 
-
-
 // Polices
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
