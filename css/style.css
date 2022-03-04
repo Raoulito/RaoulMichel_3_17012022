@@ -779,8 +779,8 @@
 }
 
 .page-menu__bloc:hover .page-menu__plat {
-  -webkit-animation: SmallerWidth 0.4s ease-in-out forwards;
-          animation: SmallerWidth 0.4s ease-in-out forwards;
+  -webkit-animation: smallerWidth 0.4s ease-in-out forwards;
+          animation: smallerWidth 0.4s ease-in-out forwards;
 }
 
 .page-menu__bloc:hover .page-menu__recetteetprix {
@@ -1016,7 +1016,7 @@
   }
 }
 
-@-webkit-keyframes SmallerWidth {
+@-webkit-keyframes smallerWidth {
   from {
     width: calc(100% - 0px);
   }
@@ -1025,7 +1025,7 @@
   }
 }
 
-@keyframes SmallerWidth {
+@keyframes smallerWidth {
   from {
     width: calc(100% - 0px);
   }
