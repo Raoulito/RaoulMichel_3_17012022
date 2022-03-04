@@ -836,6 +836,7 @@
   margin: 0;
   font-weight: bold;
   width: 40px;
+  padding-right: 10px;
 }
 
 .page-menu__check {
