@@ -45,6 +45,17 @@
   padding-right: 5px;
 }
 
+.location a {
+  padding-top: 15px;
+  padding-left: 100px;
+  font-size: 1.1em;
+}
+
+.location input {
+  border: none;
+  background-color: #eaeaea;
+}
+
 .reservation {
   background-color: #f6f6f6;
 }
